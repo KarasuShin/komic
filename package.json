@@ -1,0 +1,40 @@
+{
+  "name": "komic",
+  "version": "0.1.0",
+  "description": "Download comic in terminal",
+  "bin": {
+    "komic": "./bin/komic"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cli-progress": "^3.11.0",
+    "colorette": "^2.0.16",
+    "commander": "^9.2.0",
+    "prompts": "^2.4.2",
+    "update-notifier": "^5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarasuShin/komic.git"
+  },
+  "keywords": [
+    "comic",
+    "manga",
+    "download",
+    "cli",
+    "terminal"
+  ],
+  "author": "karasu shin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KarasuShin/komic/issues"
+  },
+  "homepage": "https://github.com/KarasuShin/komic#readme"
+}
