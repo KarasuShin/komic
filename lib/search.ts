@@ -1,15 +1,15 @@
-const { red, cyan, greenBright, bold } = require('colorette');
-const { search, getResource, getTaskInfo } = require('./request');
-const prompts = require('prompts');
+import { red, greenBright, bold } from 'colorette';
+import { search, getResource } from './request';
+import prompts  from 'prompts';
 
-module.exports = async (text) => {
-  if(!text.replaceAll(' ','')) {
+export default async function (text: string) {
+  if (!text.replaceAll(' ', '')) {
     console.error(red('please input comic name!'));
     process.exit(1);
   }
   try {
     const res = await search(text);
-    if(!res?.length) {
+    if (!res?.length) {
       console.error(red('没有搜索到相关资源'));
       process.exit(1);
     }
@@ -24,7 +24,7 @@ module.exports = async (text) => {
     }]);
     return await getResource(comicChoice.comic.id, comicChoice.comic.comic_name);
   } catch (error) {
-    console.error(red(error));
+    console.error(red(typeof error === 'string' ? error : 'error'));
     process.exit(1);
   }
-};
+}
