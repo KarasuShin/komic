@@ -1,11 +1,3 @@
 {
-  "parserOptions": {
-    "ecmaVersion": "latest"
-  },
-  "rules": {
-    "semi": "error",
-    "quotes": ["error", "single"],
-    "indent": ["error", 2],
-    "object-curly-spacing": ["error", "always"]
-  }
+  "extends": "karasu"
 }

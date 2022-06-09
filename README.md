@@ -12,17 +12,17 @@
 ## 安装
 
 ```bash
-$ npm i -g komic
+$ npm i -g komic.mjs
 # or
-$ yarn global add komic
+$ yarn global add komic.mjs
 # or
-$ pnpm add -g komic
+$ pnpm add -g komic.mjs
 ```
 
 ## 使用
 
 ```bash
-$ komic 魔理沙
+$ komic.mjs 魔理沙
 ```
 
 ## License
