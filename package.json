@@ -1,7 +1,7 @@
 {
   "name": "komic",
   "type": "module",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "packageManager": "pnpm@7.1.9",
   "description": "Download comic in terminal",
   "bin": {
